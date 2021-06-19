@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		5361C8C42671208D007AF8BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361C8C32671208D007AF8BF /* AppDelegate.swift */; };
 		5361C8C62671208D007AF8BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361C8C52671208D007AF8BF /* SceneDelegate.swift */; };
-		5361C8C82671208D007AF8BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361C8C72671208D007AF8BF /* ViewController.swift */; };
+		5361C8C82671208D007AF8BF /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5361C8C72671208D007AF8BF /* CalculateViewController.swift */; };
 		5361C8CB2671208D007AF8BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5361C8C92671208D007AF8BF /* Main.storyboard */; };
 		5361C8CD2671208D007AF8BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5361C8CC2671208D007AF8BF /* Assets.xcassets */; };
 		5361C8D02671208D007AF8BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5361C8CE2671208D007AF8BF /* LaunchScreen.storyboard */; };
+		538B6A29267DCD2300FD4A08 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B6A28267DCD2300FD4A08 /* ResultViewController.swift */; };
+		538B6A2B267DED3700FD4A08 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B6A2A267DED3700FD4A08 /* CalculatorBrain.swift */; };
+		538B6A2D267E28B900FD4A08 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538B6A2C267E28B900FD4A08 /* BMI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5361C8C02671208D007AF8BF /* BMIulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMIulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5361C8C32671208D007AF8BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5361C8C52671208D007AF8BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5361C8C72671208D007AF8BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5361C8C72671208D007AF8BF /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		5361C8CA2671208D007AF8BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5361C8CC2671208D007AF8BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5361C8CF2671208D007AF8BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5361C8D12671208D007AF8BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		538B6A28267DCD2300FD4A08 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		538B6A2A267DED3700FD4A08 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		538B6A2C267E28B900FD4A08 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		5361C8C22671208D007AF8BF /* BMIulator */ = {
 			isa = PBXGroup;
 			children = (
+				5361C8D9267120CA007AF8BF /* Models */,
+				5361C8D8267120B7007AF8BF /* Controller */,
+				5361C8D726712098007AF8BF /* View */,
 				5361C8C32671208D007AF8BF /* AppDelegate.swift */,
 				5361C8C52671208D007AF8BF /* SceneDelegate.swift */,
-				5361C8C72671208D007AF8BF /* ViewController.swift */,
-				5361C8C92671208D007AF8BF /* Main.storyboard */,
 				5361C8CC2671208D007AF8BF /* Assets.xcassets */,
-				5361C8CE2671208D007AF8BF /* LaunchScreen.storyboard */,
 				5361C8D12671208D007AF8BF /* Info.plist */,
 			);
 			path = BMIulator;
+			sourceTree = "<group>";
+		};
+		5361C8D726712098007AF8BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5361C8CE2671208D007AF8BF /* LaunchScreen.storyboard */,
+				5361C8C92671208D007AF8BF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5361C8D8267120B7007AF8BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5361C8C72671208D007AF8BF /* CalculateViewController.swift */,
+				538B6A28267DCD2300FD4A08 /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5361C8D9267120CA007AF8BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				538B6A2A267DED3700FD4A08 /* CalculatorBrain.swift */,
+				538B6A2C267E28B900FD4A08 /* BMI.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5361C8C82671208D007AF8BF /* ViewController.swift in Sources */,
+				5361C8C82671208D007AF8BF /* CalculateViewController.swift in Sources */,
 				5361C8C42671208D007AF8BF /* AppDelegate.swift in Sources */,
 				5361C8C62671208D007AF8BF /* SceneDelegate.swift in Sources */,
+				538B6A2B267DED3700FD4A08 /* CalculatorBrain.swift in Sources */,
+				538B6A2D267E28B900FD4A08 /* BMI.swift in Sources */,
+				538B6A29267DCD2300FD4A08 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.eimKlimas.BMIulator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.eimKlimas.BMIulator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
